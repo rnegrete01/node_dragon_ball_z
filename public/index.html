@@ -11,36 +11,36 @@
 <h1>Pokémon Lookup</h1>
 
 <div class="search">
-    <input type="number" id="pokemonId" placeholder="Enter Pokémon ID (1-151)" min="1" max="151" />
-    <button onclick="loadPokemon()">Search</button>
+    <input type="number" id="characterId" placeholder="Enter Character ID (1-78)" min="1" max="78" />
+    <button onclick="loadCharacter()">Search</button>
 </div>
 
 <p id="status"></p>
 
-<div id="pokemonCard" class="card hidden">
-    <img id="pokemonSprite" src="" alt="Pokemon sprite" />
-    <h2 id="pokemonName"></h2>
+<div id="characterCard" class="card hidden">
+    <img id="characterImage" src="" alt="Pokemon sprite" />
+    <h2 id="characterName"></h2>
     <table>
         <tbody>
         <tr>
             <th>ID</th>
-            <td id="pokemonID"></td>
+            <td id="characterRace"></td>
         </tr>
         <tr>
             <th>Height</th>
-            <td id="pokemonHeight"></td>
+            <td id="characterHeight"></td>
         </tr>
         <tr>
             <th>Weight</th>
-            <td id="pokemonWeight"></td>
+            <td id="characterKi"></td>
         </tr>
         <tr>
             <th>Types</th>
-            <td id="pokemonTypes"></td>
+            <td id="characterMaxKi"></td>
         </tr>
         <tr>
             <th>Abilities</th>
-            <td id="pokemonAbilities"></td>
+            <td id="characterGender"></td>
         </tr>
         </tbody>
     </table>
