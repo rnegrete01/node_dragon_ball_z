@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pokémon Lookup</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<h1>Pokémon Lookup</h1>
+
+<div class="search">
+    <input type="number" id="pokemonId" placeholder="Enter Pokémon ID (1-151)" min="1" max="151" />
+    <button onclick="loadPokemon()">Search</button>
+</div>
+
+<p id="status"></p>
+
+<div id="pokemonCard" class="card hidden">
+    <img id="pokemonSprite" src="" alt="Pokemon sprite" />
+    <h2 id="pokemonName"></h2>
+    <table>
+        <tbody>
+        <tr>
+            <th>ID</th>
+            <td id="pokemonID"></td>
+        </tr>
+        <tr>
+            <th>Height</th>
+            <td id="pokemonHeight"></td>
+        </tr>
+        <tr>
+            <th>Weight</th>
+            <td id="pokemonWeight"></td>
+        </tr>
+        <tr>
+            <th>Types</th>
+            <td id="pokemonTypes"></td>
+        </tr>
+        <tr>
+            <th>Abilities</th>
+            <td id="pokemonAbilities"></td>
+        </tr>
+        </tbody>
+    </table>
+</div>
+
+<script src="app.js"></script>
+</body>
+</html>
