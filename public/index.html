@@ -3,12 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pokémon Lookup</title>
+    <title>Character Lookup</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
 
-<h1>Pokémon Lookup</h1>
+<h1>Character Lookup</h1>
 
 <div class="search">
     <input type="number" id="characterId" placeholder="Enter Character ID (1-78)" min="1" max="78" />
@@ -17,30 +17,35 @@
 
 <p id="status"></p>
 
-<div id="characterCard" class="card hidden">
-    <img id="characterImage" src="" alt="Pokemon sprite" />
+<div id="characterImage" class="hidden">
+    <img id="characterImageDisplay" src="" alt="Character" />
+
     <h2 id="characterName"></h2>
     <table>
         <tbody>
         <tr>
             <th>ID</th>
-            <td id="characterRace"></td>
+            <td id="characterID"></td>
         </tr>
         <tr>
-            <th>Height</th>
-            <td id="characterHeight"></td>
-        </tr>
-        <tr>
-            <th>Weight</th>
+            <th>Ki</th>
             <td id="characterKi"></td>
         </tr>
         <tr>
-            <th>Types</th>
+            <th>MaxKi</th>
             <td id="characterMaxKi"></td>
         </tr>
         <tr>
-            <th>Abilities</th>
+            <th>Race</th>
+            <td id="characterRace"></td>
+        </tr>
+        <tr>
+            <th>Gender</th>
             <td id="characterGender"></td>
+        </tr>
+        <tr>
+            <th>Description</th>
+            <td id="characterDescription"></td>
         </tr>
         </tbody>
     </table>

@@ -1,11 +1,11 @@
 async function loadCharacter() {
     const id = document.getElementById("characterId").value;
     const status = document.getElementById("status");
-    const card = document.getElementById("characterCard");
+    const card = document.getElementById("characterImage");
 
     // Validate input
-    if (!id || id < 1 || id > 151) {
-        status.textContent = "Please enter a valid Pokémon ID between 1 and 151.";
+    if (!id || id < 1 || id > 78) {
+        status.textContent = "Please enter a valid character ID between 1 and 78.";
         card.classList.add("hidden");
         return;
     }
@@ -17,19 +17,20 @@ async function loadCharacter() {
         const response = await fetch(`/character/${id}`);
 
         if (!response.ok) {
-            throw new Error("Pokemon not found!");
+            throw new Error("Character not found!");
         }
 
         const character = await response.json();
 
         // Populate the card
-        document.getElementById("characterImage").src = character.image;
+        document.getElementById("characterImageDisplay").src = character.image;
+        document.getElementById("characterID").textContent = character.id;
         document.getElementById("characterName").textContent = character.name;
-        document.getElementById("characterRace").textContent = character.race;
         document.getElementById("characterKi").textContent = character.ki;
         document.getElementById("characterMaxKi").textContent = character.maxKi;
+        document.getElementById("characterRace").textContent = character.race;
         document.getElementById("characterGender").textContent = character.gender;
-
+        document.getElementById("characterDescription").textContent = character.description;
         status.textContent = "";
         card.classList.remove("hidden");
 

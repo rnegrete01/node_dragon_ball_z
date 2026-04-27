@@ -10,7 +10,7 @@ app.get("/character/:id", async (req, res) => {
         const response = await fetch(`https://dragonball-api.com/api/characters/${id}`);
 
         if (!response.ok) {
-            return res.status(404).json({ error: "Pokemon not found" });
+            return res.status(404).json({ error: "Character not found" });
         }
 
         const data = await response.json();
