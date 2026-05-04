@@ -1,3 +1,4 @@
+
 /**
  * async function that loads the character
  * @returns {Promise<void>}
