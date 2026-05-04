@@ -33,5 +33,17 @@ In order to run the server.js file, the express module must be installed on your
 - Third, click on the local host link in your terminal. This should open
 the website in your perferred browser.
 
+---
+
+### 👀 Run Example
+> *This is an example of entering the number 10 into the input field. The outcome is Son Gohan!
+> <img src="assets/img_gohan.png" width="300" height="300" />
+
+# 🧑‍🎓Author
+Rafael Negrete Fonseca
+> - GitHub URL: https://github.com/rnegrete01
+> - Email: ranegr01@wsc.edu or rafaelnegretefonseca123@gmail.com
+
+
 
 
