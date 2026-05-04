@@ -37,7 +37,7 @@ the website in your perferred browser.
 
 ### 👀 Run Example
 > *This is an example of entering the number 10 into the input field. The outcome is Son Gohan!
-> <img src="assets/img_gohan.png" width="300" height="300" />
+> <img src="assets/img_gohan.png"/>
 
 # 🧑‍🎓Author
 Rafael Negrete Fonseca
