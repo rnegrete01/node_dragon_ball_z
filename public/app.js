@@ -1,6 +1,21 @@
+/**
+ * async function that loads the character
+ * @returns {Promise<void>}
+ */
 async function loadCharacter() {
+    /**
+     * character's constant ID
+     */
     const id = document.getElementById("characterId").value;
+    /**
+     * character's constant status that is fetched via a getElementById command.
+     * @type {HTMLElement}
+     */
     const status = document.getElementById("status");
+    /**
+     * character's card that if fetched via a getElementById command.
+     * @type {HTMLElement}
+     */
     const card = document.getElementById("characterImage");
 
     // Validate input
@@ -14,12 +29,19 @@ async function loadCharacter() {
         status.textContent = "Loading...";
         card.classList.add("hidden");
 
+        /**
+         * constant response that waits for information on selected character's ID.
+         * @type {Response}
+         */
         const response = await fetch(`/character/${id}`);
 
         if (!response.ok) {
             throw new Error("Character not found!");
         }
 
+        /**
+         * character is a variable that stores the character's information.
+         */
         const character = await response.json();
 
         // Populate the card
