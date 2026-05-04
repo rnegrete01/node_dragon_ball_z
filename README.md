@@ -1,5 +1,4 @@
-# Dragon Ball Z Character Lookup
-
+# Dragon Ball Z Character Lookup <img src="https://img.shields.io/badge/JavaScript-323330?style=for-the-badge&logo=javascript&logoColor=F7DF1E" /> <img src="https://img.shields.io/badge/WebStorm-000000?style=for-the-badge&logo=WebStorm&logoColor=white"/>
 > *This program is built with **Node.js** and **Express**. It allows users to fetch information from a website
 > by using an API that gets live infromation from: [Dragon Ball API](https://dragonball-api.com/). It's an enjoyable
 > program that helps viewers to get to know the vast characters of Dragon Ball Z.*
